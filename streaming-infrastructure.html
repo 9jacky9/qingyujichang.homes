@@ -1,65 +1,73 @@
 <!DOCTYPE html>
+
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>npm、pip 安装慢：开发者镜像与代理的设置 - 轻语机场</title>
-<meta name="description" content="安装依赖时 npm、pip 速度慢或超时？介绍使用镜像源与为工具设置代理两种办法，以及各自的适用情况与注意事项。">
-    <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Zoom共享视频没声音或很卡：从共享音频到观众端完成演练</title>
+<meta content="分开处理本地播放、共享设置和网络接收，使用Zoom视频共享与Share sound选项验证研讨会中的音画表现。" name="description"/>
+<link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-    <header>
-        <a href="index.html" class="logo" style="text-decoration:none; color:inherit; display:inline-block; position:relative; z-index:100; cursor:pointer;">
-            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10,90 L90,10 L70,90 Z" fill="#0a2540"/>
-                <path d="M10,90 L90,10 L30,10 Z" fill="#00d4ff" opacity="0.8"/>
-            </svg>
+<header>
+<a class="logo" href="index.html" style="text-decoration:none; color:inherit; display:inline-block; position:relative; z-index:100; cursor:pointer;">
+<svg viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<path d="M10,90 L90,10 L70,90 Z" fill="#0a2540"></path>
+<path d="M10,90 L90,10 L30,10 Z" fill="#00d4ff" opacity="0.8"></path>
+</svg>
             轻语机场
         </a>
-        
-            <input type="checkbox" id="mobile-menu-toggle" class="menu-toggle" style="display:none;">
-            <label for="mobile-menu-toggle" class="menu-hamburger">
-                <span></span><span></span><span></span>
-            </label>
-            <nav style="display:flex; gap: 20px; align-items: center;">
+<input class="menu-toggle" id="mobile-menu-toggle" style="display:none;" type="checkbox"/>
+<label class="menu-hamburger" for="mobile-menu-toggle">
+<span></span><span></span><span></span>
+</label>
+<nav style="display:flex; gap: 20px; align-items: center;">
 <a href="index.html#advantages" style="text-decoration:none; color:inherit; font-weight:bold;">核心优势</a>
-            <a href="index.html#streaming" style="text-decoration:none; color:inherit; font-weight:bold;">流媒体解锁</a>
-            <a href="index.html#pricing" style="text-decoration:none; color:inherit; font-weight:bold;">产品定价</a>
-            <a href="index.html#faq" style="text-decoration:none; color:inherit; font-weight:bold;">常见问题</a>
+<a href="index.html#streaming" style="text-decoration:none; color:inherit; font-weight:bold;">流媒体解锁</a>
+<a href="index.html#pricing" style="text-decoration:none; color:inherit; font-weight:bold;">产品定价</a>
+<a href="index.html#faq" style="text-decoration:none; color:inherit; font-weight:bold;">常见问题</a>
 <a href="industry-insights.html" style="text-decoration:none; color:inherit; font-weight:bold;">行业洞察</a>
-<a href="https://ww012.twilightaff.com/#/?code=A56DH1Af" rel="nofollow" target="_blank" class="nav-cta">立即体验</a>
+<a class="nav-cta" href="https://ww012.twilightaff.com/#/?code=A56DH1Af" rel="nofollow" target="_blank">立即体验</a>
 </nav>
-    </header>
-
-    <div class="article-content container" style="padding: 100px 5%; line-height: 1.8;">
-        <h1 style="font-size: 2.5rem; color: #0a2540; margin-bottom: 20px;">npm、pip 安装慢：开发者镜像与代理的设置</h1>
- <div style="color: #666; margin-bottom: 40px; font-size: 0.95rem;">发布于 2026年11月12日 | 开发环境</div>
-<h2>一、先判断慢在哪里</h2>
-<p>安装命令卡住时，先看是下载速度慢，还是连接超时。前者可以换镜像源，后者可能需要借助代理。</p>
-<h2>二、使用镜像源</h2>
-<p>npm 与 pip 都支持修改下载源地址，指向较近且更新及时的镜像站。修改后重新安装，通常速度会明显提升。注意镜像的同步会有延迟，最新发布的包可能暂时没有。</p>
-<h2>三、为工具设置代理</h2>
-<ul><li>npm 可通过配置项设置 proxy 与 https-proxy。</li><li>pip 可通过命令参数或配置文件指定代理。</li><li>设置时确认端口与协议类型与客户端一致。</li></ul>
-<h2>四、团队里的统一做法</h2>
-<p>把镜像与代理配置写进项目文档或 CI 配置里，避免每个人各自摸索。同时锁定依赖版本，让安装结果更可复现。</p>
-<h2>五、安全提醒</h2>
-<p>只使用可信的镜像源，并留意依赖包的来源。不要随意执行来历不明的安装脚本。</p>
- </div>
-
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <a href="index.html" class="logo" style="text-decoration:none; color:var(--white); margin-bottom: 1.5rem;">
-                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10,90 L90,10 L70,90 Z" fill="#ffffff"/>
-                            <path d="M10,90 L90,10 L30,10 Z" fill="#00d4ff" opacity="0.8"/>
-                        </svg>
+</header>
+<div class="article-content container" style="padding: 100px 5%; line-height: 1.8;"><h1 style="font-size: 2.5rem; color: #0a2540; margin-bottom: 20px;">Zoom共享视频没声音或很卡：从共享音频到观众端完成演练</h1><div data-swc-article-body="2026-11-16"><p>线上研讨会播放产品视频时，主持人听得清楚，观众却只看见无声画面；或者演示文档清晰，视频一播就卡。这些现象不一定来自带宽，可能是共享方式没有匹配内容。本文以Zoom桌面客户端为例，安排正式活动前的小规模演练，只使用自己有权在会议中展示的素材。</p>
+<h2>先验证素材在本机能正常播放</h2>
+<p>打开准备分享的视频，检查开头、中段和结尾的声音与画面。网络盘或网页上的素材应确认播放稳定，必要时使用获准的本地副本。文件本身损坏、音轨缺失或播放器静音，都不能通过切换会议线路解决。</p>
+<p>使用与正式活动相同的电脑、耳机和客户端版本。笔记本临时换到另一套扩展坞或音频设备，可能改变输出路径。记下素材位置和需要讲解的片段，不要开会时在多个私人文件夹之间寻找，以免误共享无关内容。</p>
+<h2>第一轮操作：分享画面时同时分享声音</h2>
+<ol><li>进入一个测试会议，点击Share Screen或当前界面对应的共享入口，选择要分享的窗口或内容。</li><li>在可用共享选项中启用Share sound，确认要共享的是电脑播放声音，而不是依赖麦克风收录扬声器。</li><li>让另一台独立设备作为观众加入，使用耳机收听，播放一小段视频并确认声音到达。</li></ol>
+<p>不同共享内容类型可能提供不同选项。若没有相应开关，先核对客户端与内容类型的官方说明。观众设备与主持设备放在同一房间时，应避免同时开麦和扬声器造成回声，否则容易把回声误判为共享音频故障。</p>
+<h2>视频片段与静态文档需要不同取舍</h2>
+<p>Zoom提供针对视频共享的优化选项，适合视频片段，普通文字文档不应习惯性开启，否则可能影响清晰度。视频需要连续动作，合同与表格需要清楚文字，两者目标不同。活动流程在视频和幻灯片之间切换时，主持人应知道何时调整。</p>
+<p>本地视频可以评估客户端提供的Video file共享功能，它按平台支持方式处理文件，与普通桌面共享的工作方式不同。并非所有格式和环境都支持相同能力，先在测试会议确认，不把第一次尝试留到客户正在等待的正式现场。</p>
+<h2>第二轮操作：用同一片段比较共享方式</h2>
+<ol><li>先用普通窗口共享播放固定片段，让观众说明声音、运动画面和字幕表现。</li><li>停止共享，按当前客户端可用入口选择视频文件共享或视频优化，再播放同一段。</li><li>比较后切回一页带细小文字的演示文稿，确认恢复到适合文档的方式，避免视频设置遗留影响后续讲解。</li></ol>
+<p>比较时只改共享方式，不同时换网络或编码文件。若本机播放顺畅、两种共享都在所有观众端卡顿，继续看发送负载与接收；若仅一台观众设备卡顿，应调查那台设备及网络，而不是让主持人无限降低全场质量。</p>
+<h2>把本机负载和网络竞争分开</h2>
+<p>视频解码、会议编码、虚拟背景和录制可能同时占用资源。先关闭不需要的高负载程序，用简单背景和必要来源重测。若减少本机工作后改善，就继续调查资源瓶颈。下载测速很高并不能证明设备有能力处理所有视频任务。</p>
+<p>网络方面，确认没有云盘上传或其他设备占满上行，条件允许时用有线连接比较。避免在正式活动中跑满速测试，它会争用正在使用的带宽。演练应覆盖真实活动时间与地点，家里测试正常不代表会场无线环境相同。</p>
+<h2>准备主持人与协助人的分工</h2>
+<p>指定一位协助人只负责观察观众端、聊天反馈和备用素材。主持人不必在讲话时不断检查自己的预览。协助人应能明确说出没有声音、画面停顿或文字模糊，而不是只说“有问题”，这样主持人才能选择对应动作。</p>
+<p>为关键片段准备经过批准的替代方式，例如静态截图配讲解或会后发送资料。若需要额外网络服务，再做<a href="https://dajichang.mom/">视频会议机场比较</a>时，应核对设备与使用条件并事先演练；未经验证的连接不应在直播现场成为临时唯一方案。</p>
+<h2>共享声音也需要隐私边界</h2>
+<p>开启电脑声音共享时，其他程序的提示音可能一并传入会议。活动前关闭无关媒体和通知，选择最小必要的共享窗口。不要在共享中打开私人聊天、密码管理器或其他客户资料，即使窗口只出现片刻，也可能已经被观众看到。</p>
+<p>如果会议需要录制，按组织与平台流程处理告知、权限及保存位置。录制结果也应抽查音画，而不是假设直播听得到就一定录得完整。出现故障后用非敏感短片重现，不必把完整客户活动录像发送给无关支持人员。</p>
+<h2>正式开场前做最后一次短验收</h2>
+<p>检查电脑供电、音频设备、素材路径和共享选项，让协助人在独立设备确认十几秒的音画，然后停止测试。活动结束后退出共享和录制，整理临时文件。有效的准备不是追求最高分辨率，而是让观众稳定收到正确的画面、声音与讲解。</p></div></div>
+<footer>
+<div class="container">
+<div class="footer-grid">
+<div class="footer-col">
+<a class="logo" href="index.html" style="text-decoration:none; color:var(--white); margin-bottom: 1.5rem;">
+<svg viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<path d="M10,90 L90,10 L70,90 Z" fill="#ffffff"></path>
+<path d="M10,90 L90,10 L30,10 Z" fill="#00d4ff" opacity="0.8"></path>
+</svg>
                         轻语机场</a>
-                </div>
-            </div>
-            <div class="footer-bottom">&copy; 2026 轻语机场. 保留所有权利.</div>
-        </div>
-    </footer>
+</div>
+</div>
+<div class="footer-bottom">© 2026 轻语机场. 保留所有权利.</div>
+</div>
+</footer>
 </body>
 </html>
